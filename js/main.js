@@ -56,5 +56,3 @@ const createPost = () => {
 };
 
 const fewPosts = Array.from({length: 25}, createPost);
-
-console.log(fewPosts);
