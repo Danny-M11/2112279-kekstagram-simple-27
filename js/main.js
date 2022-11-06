@@ -55,4 +55,6 @@ const createPost = () => {
 
 };
 
-const fewPosts = Array.from({length: 25}, createPost);
+const createPosts = (length = 25) => Array.from({length}, createPost);
+
+createPosts();
