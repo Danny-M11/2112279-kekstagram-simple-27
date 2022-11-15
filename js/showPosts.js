@@ -18,5 +18,5 @@ userPosts.forEach(({url, likes, comment}) => {
   userPostsFragment.appendChild(postElement);
 });
 
-//добавляем фрагмент на страницу
+//добавляем фрагмент на в блок на страницу
 PhotoTape.appendChild(userPostsFragment);
