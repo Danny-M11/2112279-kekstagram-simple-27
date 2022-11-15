@@ -1,3 +1,2 @@
-import {createPosts} from './data.js';
+import './showPosts.js';
 
-createPosts();
