@@ -1,2 +1,2 @@
-import './showPosts.js';
-
+import './uploadPost.js';
+import './similarPosts.js';

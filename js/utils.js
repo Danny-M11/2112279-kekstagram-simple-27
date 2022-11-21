@@ -1,4 +1,4 @@
-//программа вывода случайного числа
+//функция вывода случайного числа
 const randomInteger = (a, b) => {
   if (a < 0 || b < 0) {
     return NaN;
@@ -9,7 +9,7 @@ const randomInteger = (a, b) => {
   return Math.floor(result);
 };
 
-//программа проверки длины строки
+//функция проверки длины строки
 const checkStringLimit = (string, limit) => {
   const length = string.length;
 
@@ -22,4 +22,7 @@ const checkStringLimit = (string, limit) => {
 
 checkStringLimit('Word', 11);
 
-export {randomInteger};
+//функция проверки нажатия на 'Escape'
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+export {randomInteger, isEscapeKey};
