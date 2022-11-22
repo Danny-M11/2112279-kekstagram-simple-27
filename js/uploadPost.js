@@ -1,5 +1,9 @@
 import './formValidation.js';
+import './changeScale.js';
+import './changeEffect.js';
 import {isEscapeKey} from './utils.js';
+import { resetEffects } from './changeEffect.js';
+import { resetScale } from './changeScale.js';
 
 const openPhotoSelection = document.querySelector('#upload-file');
 const photoEditing = document.querySelector('.img-upload__overlay');
@@ -27,6 +31,8 @@ const closeModal = () => {
   document.removeEventListener('keydown', onModalEscKeydown);
 
   openPhotoSelection.value = '';
+  resetEffects();
+  resetScale();
 };
 
 openPhotoSelection.addEventListener ('change', openModal);
